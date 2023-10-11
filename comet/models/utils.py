@@ -13,18 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from typing import List
+from dataclasses import dataclass
 
 import torch
 from torch.utils.data import Sampler
 from transformers.utils import ModelOutput
 
-
+@dataclass
 class Prediction(ModelOutput):
     """Renamed ModelOutput"""
 
     pass
 
-
+@dataclass
 class Target(ModelOutput):
     """Renamed ModelOutput into Targets to keep same behaviour"""
 
